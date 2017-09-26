@@ -1,0 +1,5 @@
+﻿Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\LabThreeMigrations
+
+add-migration -ConfigurationTypeName LabThree.Migrations.LabThreeMigrations.Configuration "PInitalCreate1"
+
+update-database -ConfigurationTypeName LabThree.Migrations.LabThreeMigrations.Configuration
